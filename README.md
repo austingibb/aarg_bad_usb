@@ -1,4 +1,4 @@
-# Markdown to Ducky Script Converter
+# Human Readable Text to Ducky Script Converter
 
 ## Overview
 
