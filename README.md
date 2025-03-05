@@ -2,11 +2,11 @@
 
 ## Overview
 
-This repository contains a **Python script** that converts a `.md` (Markdown) file into a **Ducky Script**. The generated script can be used with a **Flipper Zero** in **Bad USB mode** to type out the contents of the Markdown file onto any computer that accepts keyboard input.
+This repository contains a **Python script** that converts any human readable file into a **Ducky Script**. The generated script can be used with a **Flipper Zero** in **Bad USB mode** to type out the contents of the human readable file onto any computer that accepts keyboard input.
 
 ## Features
 
-- Converts Markdown (`.md`) files into a **.ducky script**.
+- Converts any human readable file into a **.ducky script**.
 - Outputs keystrokes that can be injected via **Flipper Zero Bad USB mode**.
 - Simple and lightweight with minimal dependencies.
 
@@ -26,26 +26,26 @@ cd <repo_folder>
 
 ## Usage
 
-Run the script to convert a `.md` file into a `.ducky` script:
+Run the script to convert a `.txt` file or `.md` file into a `.ducky` script:
 
 ```sh
-python md_to_ducky.py input.md output.ducky
+python human_readable_to_kb_inputs.py input.md output.ducky.txt
 ```
 
 ### Parameters
 
-- `input.md` → Path to the Markdown file to convert.
-- `output.ducky` → Path where the generated Ducky Script will be saved.
+- `input.md` → Path to the human readable file to convert.
+- `output.ducky.txt` → Path where the generated Ducky Script will be saved.
 
 ## Example
 
 If you have a file named `example.md`, convert it with:
 
 ```sh
-python md_to_ducky.py example.md example.ducky
+python human_readable_to_kb_inputs.py example.md example.ducky.txt
 ```
 
-Then, load `example.ducky` onto your **Flipper Zero**, set it to **Bad USB mode**, and execute it on the target device.
+Then, load `example.ducky.txt` onto your **Flipper Zero**, set it to **Bad USB mode**, and execute it on the target device.
 
 ## License
 
